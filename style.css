@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Rhodium+Libre&family=Ribeye+Marrow&family=Risque&display=swap');">
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 200vh;
+    background-color: black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+   font-family: 'Risque', sans-serif;
+    
+}
+
+p {
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Rhodium Libre', sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Ribeye Marrow', sans-serif;
+}
+
+.header-fixed {
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    background-color: #000000;
+    border-bottom: 2px solid rgb(8, 230, 8);
+}
+
+.header-fixed  a:hover {
+  color: rgba(8, 230, 8);
+}
+
+.wrapped-header {
+   
+    display: flex;
+    justify-content: space-between;
+    height: 5vh;
+    margin: 2rem;
+   
+    
+}
+
+.header,
+.header1 {
+    display: flex;
+    gap: 2.5rem;
+}
+
+
+
+.header-pic {
+    display: flex;
+   justify-content: center;
+   align-items: center; 
+    gap: 4rem;
+}
+
+.header-pic-text {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(top left rgba(255, 255, 255, 0.62), rgba(255, 255, 255, 0.2));
+    gap: 30px;
+    width: 550px;
+    height: 700px;
+    padding: 1.5rem;
+    border: 1px solid white;
+    border-radius: 4rem;
+}
+
+.iconify {
+    font-size: 2rem;
+}
+
+/*  image slider */
+
+.slider {
+    margin: 0 auto;
+    max-width: 80%;
+   
+  }
+  
+  .slide_viewer {
+    padding-top: 2rem;
+    height: 900px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slide_group {
+    height: 100%;
+    position: relative;
+    width: 100%;
+   
+  }
+  
+  .slide {
+    display: none;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .slide:first-child {
+    display: block;
+  }
+  
+  .slide:nth-of-type(1) {
+    background: url(img/slider1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .slide:nth-of-type(2) {
+    background: url(img/imgslider2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .slide:nth-of-type(3) {
+    background: url(img/imgslider3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .slide:nth-of-type(4) {
+    background: url(img/imgslider4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .slide_buttons {
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+  }
+  
+  a.slide_btn {
+    color: #474544;
+    font-size: 42px;
+    margin: 0 0.175em;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+  }
+  
+  .slide_btn.active, .slide_btn:hover {
+    color: #33db00;
+    cursor: pointer;
+  }
+  
+  .directional_nav {
+    height: 50%;
+    margin: 0 auto;
+    max-width: 110%;
+    position: relative;
+    top: -340px;
+  }
+  
+  .previous_btn {
+    bottom: 0;
+    left: 100px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+  }
+  
+  .next_btn {
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    right: 100px;
+    top: 0;
+  }
+  
+  .previous_btn, .next_btn {
+    cursor: pointer;
+    height: 65px;
+    -webkit-transition: opacity 2s ease-in-out;
+    -moz-transition: opacity 2s ease-in-out;
+    -ms-transition: opacity 2s ease-in-out;
+    -o-transition: opacity 2s ease-in-out;
+    transition: opacity 2s ease-in;
+    width: 65px;
+  }
+  
+  .previous_btn:hover, .next_btn:hover {
+    opacity: 1;
+  }
+  
+
+  /* products */
+
+  .product-header {
+    padding-top: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    gap: 2rem;
+  }
+
+ 
+
+  .product-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    
+  }
+
+  .mini-products {
+      height: 300px;
+      transition: transform .5s;
+      margin-left: 2.5rem;
+  }
+
+ 
+
+  .mini-products:hover {
+    transform: scale(1.2);
+  }
+
+  .mini-products:focus {
+
+  }
+
+
+
+  @media only screen and (max-width: 767px) {
+    .previous_btn {
+      left: 50px;
+    }
+    .next_btn {
+      right: 50px;
+    }
+  }
