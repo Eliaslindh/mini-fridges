@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Rhodium+Libre&family=Ribeye+Marrow&family=Risque&display=swap');">
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body 
+{
+    display: flex;
+   
+    background-color: black;
+    
+}
+
+a 
+{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+   font-family: 'Risque', sans-serif;
+    
+}
+
+h1 
+{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: -0.5rem;
+}
+
+span 
+{
+  color: white;
+}
+
+
+.header-fixed 
+{
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    background-color: #000000;
+    border-bottom: 2px solid rgb(8, 230, 8);
+}
+
+/* styling hover */
+
+.header-fixed a:hover 
+{
+  color: rgba(8, 230, 8);
+}
+
+/* ends hover */
+
+
+/* dropdown styling */
+
+.drophref 
+{
+  
+  color: white;
+  padding: 16px;
+  font-size: 1.5rem;
+  border: none;
+}
+
+.dropdown 
+{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content 
+{
+  display: none;
+  position: absolute;
+  background: none;
+  background: black;
+  border: 1px solid #33db00;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  
+}
+
+.dropdown-content a 
+{
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+
+.dropdown:hover .dropdown-content 
+{
+  display: block;
+}
+
+/*dropdown end*/
+
+.wrapped-header 
+{
+    display: flex;
+    justify-content: space-between;
+    height: 5vh;
+    margin: 2rem;
+}
+
+.header,
+.header1 
+{
+    display: flex;
+    gap: 2.5rem;
+}
+
+.header-pic 
+{
+    display: flex;
+   justify-content: center;
+   align-items: center; 
+    gap: 4rem;
+}
+
+.header-pic-text 
+{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(top left rgba(255, 255, 255, 0.62), rgba(255, 255, 255, 0.2));
+    gap: 30px;
+    width: 550px;
+    height: 700px;
+    padding: 1.5rem;
+    border: 1px solid white;
+    border-radius: 4rem;
+}
+
+.iconify 
+{
+    font-size: 2rem;
+}
+
+.productinfowrapper{
+display: flex;
+justify-content: space-evenly;
+width: 100%;
+}
+
+.image {
+    margin-top: 10rem;
+    width: 500px;
+
+    
+}
+
+.image2 {
+display: flex;
+justify-content: center;
+
+}
+
+.img-products {
+    display: flex;
+    
+  
+    flex-direction: column;
+}
+.main-product {
+    height: 400px;
+}
+
+.mini-products
+{
+    height: 200px;
+}
+.multiple-img {
+display: flex;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 500px;
+}
+
+.info p {
+    
+    font-size: 1.2rem;
+}
+
+.info p,
+h2,
+h3{
+    color: white;
+}
+
+.stock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.stock button {
+    width: 80px;
+    height: 10px;
+    border-radius: 20px;
+    color: #33db00;
+    background: #33db00;
+    border: none;
+}
+
+.basket {
+padding-top: 1rem;
+}
+
+.basket button {
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: 'Roboto',sans-serif;
+}
+
